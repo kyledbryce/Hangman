@@ -109,8 +109,9 @@ def player_one_must_choose_valid_answer():
                         valid_answer_chosen = True
                         break
                 if not valid_answer_chosen:
+                    clear_screen()
                     print("Your choice consists of only special characters. Please include at least")
-                    print("one valid character from the list " + characters_not_used_yet)
+                    print("one valid character from the list " + characters_not_used_yet + "\n")
 
 
 def update_array_of_concealed_revealed_characters():
